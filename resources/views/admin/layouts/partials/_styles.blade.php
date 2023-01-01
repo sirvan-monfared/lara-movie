@@ -17,7 +17,7 @@
 <link href="{{ asset('admin/vendors/socicon/css/socicon.css') }}" rel="stylesheet" type="text/css" />
 <link href="{{ asset('admin/vendors/vendors/line-awesome/css/line-awesome.min.css') }}" rel="stylesheet" type="text/css" />
 <link href="{{ asset('admin/vendors/vendors/flaticon/css/flaticon.css') }}" rel="stylesheet" type="text/css" />
-<link href="{{ asset('admin/vendors/vendors/metronic/css/styles.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset('admin/vendors/vendors/laraplus/css/styles.css') }}" rel="stylesheet" type="text/css" />
 <link href="{{ asset('admin/vendors/vendors/fontawesome5/css/all.min.css') }}" rel="stylesheet" type="text/css" />
 
 <!--begin::Global Theme Styles -->

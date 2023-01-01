@@ -23,9 +23,9 @@ Route::get('/genre/{genre}', [PagesController::class, 'genre'])->name('genre.sin
 Route::get('/people', [PagesController::class, 'people'])->name('people');
 Route::get('/people/{person}', [PagesController::class, 'person'])->name('person.single');
 
-Route::middleware(['auth', 'is_admin'])->prefix('admin')->group(function() {
+Route::middleware(['auth', 'is_admin'])->prefix('lara-admin')->group(function() {
 
-    Route::get('/home', [HomeController::class, 'index'])->name('admin');
+    Route::get('/', [HomeController::class, 'index'])->name('admin');
 
     Route::resource('movie', MovieController::class);
     Route::resource('person', PersonController::class);
@@ -58,9 +58,5 @@ Route::middleware(['auth', 'is_admin'])->prefix('admin/api')->group(function() {
 
     Route::get('image-sizes', [ApiController::class, 'imageSizes'])->name('admin.api.image_sizes');
 });
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
