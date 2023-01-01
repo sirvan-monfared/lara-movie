@@ -1,0 +1,105 @@
+@font-face {
+    font-family: IranSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../../../public/fonts/iransans/IRANSansWeb.eot);
+    src: url(../../../../public/fonts/iransans/IRANSansWeb.eot?#iefix) format('embedded-opentype'),
+    url(../../../../public/fonts/iransans/IRANSansWeb.woff2) format('woff2'),
+    url(../../../../public/fonts/iransans/IRANSansWeb.woff) format('woff'),
+    url(../../../../public/fonts/iransans/IRANSansWeb.ttf) format('truetype')
+}
+body * {
+    font-family: IranSans;
+}
+.form-wrap.form-builder .frmb-control li, .form-wrap.form-builder .frmb .field-label, .form-wrap.form-builder .frmb .legend {
+    font-family: IranSans;
+}
+.form-wrap.form-builder .frmb li{
+    text-align: right;
+    direction: rtl;
+}
+.form-wrap.form-builder .frmb .field-actions {
+    left: 0 !important;
+    right: auto !important;
+}
+.form-wrap.form-builder .frmb .form-elements .false-label:first-child, .form-wrap.form-builder .frmb .form-elements label:first-child {
+    float: right !important;
+}
+.form-wrap.form-builder .frmb-control li {
+    direction: rtl !important;
+    text-align: right !important;
+}
+.form-wrap.form-builder .frmb-control li:before {
+    margin-left: 10px;
+}
+.form-wrap.form-builder * {
+    box-sizing: border-box;
+    font-family: IranSans;
+}
+.form-wrap.form-builder .frmb .form-elements input[type=color], .form-wrap.form-builder .frmb .form-elements input[type=date], .form-wrap.form-builder .frmb .form-elements input[type=number], .form-wrap.form-builder .frmb .form-elements input[type=text], .form-wrap.form-builder .frmb .form-elements select, .form-wrap.form-builder .frmb .form-elements textarea {
+    padding-right: 15px !important;
+}
+.form-wrap.form-builder .frmb .sortable-options>li .remove {
+    top: 20px !important;
+    left: 14px !important;
+    right: auto !important;
+}
+.form-builder-dialog {
+    font-family: IranSans;
+    text-align: right;
+    direction: rtl;
+}
+.form-builder-dialog .button-wrap .btn {
+    font-family: IranSans;
+}
+.form-wrap.form-builder .frmb .prev-holder label {
+    padding-right: 10px;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+}
+.top-nav {
+    text-align: right;
+    position: relative;
+    bottom: 20px;
+}
+.top-nav a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 1px 3px;
+}
+.top-nav a:hover {
+    color: orange;
+    border-color: orange;
+}
+
+.breadcrumb {
+    color: white;
+    font-family: IranSans;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.form-wrap.form-builder .frmb .prev-holder input[type=number], .form-wrap.form-builder .frmb .prev-holder input[type=text], .form-wrap.form-builder .frmb .prev-holder select, .form-wrap.form-builder .frmb .prev-holder textarea{
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+.description-wrap {
+    display: none !important;
+}
+.form-wrap.form-builder .tooltip-element {
+    display: none !important;
+}
+.form-builder-dialog.data-dialog pre {
+    text-align: left !important;
+    direction: ltr !important;
+}
+.formData-json {
+    font-family: monospace !important;
+}
