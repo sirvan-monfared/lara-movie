@@ -21,9 +21,10 @@ class PagesController extends Controller
      */
     public function index()
     {
-        $movies = Movie::with('featured')->latest()->take(8)->get();
-        $people = Person::latest('id')->take(8)->get();
-        return view('front.index', compact('movies', 'people'));
+        return view('front.index', [
+            'movies' => Movie::with('featured')->latest()->take(8)->get(),
+            'people' => Person::latest('id')->take(8)->get()
+        ]);
     }
 
 
