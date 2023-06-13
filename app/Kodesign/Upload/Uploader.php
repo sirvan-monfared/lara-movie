@@ -72,6 +72,7 @@ class Uploader {
         $this->uploader->base_name = removeExtension($this->file->getClientOriginalName());
 
         $file_name = "{$this->uploader->base_name}.{$this->uploader->base_extension}";
+
         if (file_exists($this->uploader->base_root . $file_name)) {
             $this->uploader->base_name = "{$this->uploader->base_name}". uniqid();
             $file_name = "{$this->uploader->base_name}.{$this->uploader->base_extension}";

@@ -20,7 +20,6 @@ class ImageUploader extends Uploader{
         $copy_sizes = $this->getOption('copy_sizes') ?: $this->defaultSizes();
 
         foreach ($copy_sizes as $size_name => $size_options) {
-
             list ($width, $height) = explode('x', array_get($size_options, 'size'));
 
             $image = (new ImageManager())->make($this->file);
